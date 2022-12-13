@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main>
+    <div class="-maxWidth -centered">
+  <h1 class="main_title">Learn to code by <br>watching others</h1>
+  <p class="main_explanation1"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable.</p> 
+</div>
+<div>
+  <p class="main_explanation2"><b> Try it free 7 days</b> then $20/mo. thereafter</p>
+<div class="primary">
+  <form>
+    <label for="fname" ></label>
+    <input class="primary_inputbox" type="text" id="fname" name="fname" placeholder="First Name"><br>
+    <span id="fname_errorIcon" class="FirstName_errorIcon" ></span>
+    <p id="fname_errorMsg" class="FirstName_errorMessage">First Name cannot be empty</p>
+    <label for="lname"></label>   
+    <input class="primary_inputbox" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+    <span id="lname_errorIcon" class="LastName_errorIcon" ></span>
+    <p id="lname_errorMsg" class="LastName_errorMessage">Last Name cannot be empty</p>
+    <label for="email"></label>
+    <input class="primary_inputbox" type="email" id="email" name="email" placeholder="Email Address"><br>
+    <span id="email_errorIcon" class="Email_errorIcon" ></span>
+    <p id="email_errorMsg" class="Email_errorMessage">Looks like this is not an email</p>
+    <label for="password"></label>
+    <input id="password" class="primary_inputbox" type="password" name="password" placeholder="Password"><br>
+    <span id="password_errorIcon" class="Password_errorIcon" ></span>
+    <p id ="password_errorMsg" class="Password_errorMessage">Password cannot be empty</p>
+    <input id="submitBtn" class="primary_submit" type="button" value="CLAIM YOUR FREE TRIAL">
+  </form>
+ <p class="primary_explanation1"> By clicking the button, you are agreeing to our <span class="-redBold">Terms and Services</span> </p>
+</div>
+</div>
+</main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Chyunjet</a>.
+    </p>
+  </footer>
+</body>
+</html>

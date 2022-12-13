@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap')
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+//must have class in frontendMentor challenge
+.attribution 
+    font-size: 11px
+    text-align: center
+attribution a 
+    color: hsl(228, 45%, 44%)
+
+//custom variable
+$color_primaryOne: hsl(0, 100%, 74%) //red
+$color_primaryTwo: hsl(154, 59%, 51%) //green
+$color_accent: hsl(248, 32%, 49%) //blue
+$color_neutralOne: hsl(249, 10%, 26%) //darkBlue
+$color_neutralTwo: hsl(246, 25%, 77%) //greyBlue
+$normal_weight: 400
+$medium_weight: 500
+$semiBold_weight: 600
+$bold_weight: 700
+//tag
+main
+    padding: 90px 25px 30px 25px
+    display: flex
+    flex-direction: column
+    background-color: $color_primaryOne
+    background-image: url("images/bg-intro-mobile.png")
+//class
+.FirstName_errorMessage, .LastName_errorMessage, .Email_errorMessage,
+.Password_errorMessage
+    color: white
+    font-size: 0.7rem
+    margin-bottom: 10px
+    text-align: right
+    margin-top: 4px
+    
+.FirstName_errorIcon, .LastName_errorIcon, .Email_errorIcon,
+.Password_errorIcon
+    content: url("images/icon-error.svg")    
+    position: absolute
+    right: 40px
+    display: none
+.FirstName_errorIcon    
+    top: 35px
+.LastName_errorIcon    
+    top: 118px
+.Email_errorIcon  
+    top: 200px    
+.Password_errorIcon    
+    top: 282px    
+    
+.main_title, .main_explanation1
+    color: white
+    text-align: center
+    margin: auto
+    
+.main_title
+    line-height: 40px
+    margin-bottom: 30px
+.main_explanation1
+    margin-bottom: 60px
+.main_explanation2, .primary
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.274)
+    width: min(325px, 100%)
+    margin: auto
+
+
+.main_explanation2
+    color: white    
+    background-color: $color_accent
+    padding: 20px 60px
+    text-align: center
+    border-radius: 10px
+    margin-bottom: 20px
+
+.primary
+    background-color: white
+    padding: 20px
+    border-radius: 10px
+    position: relative
+    
+.primary_explanation1
+    color: $color_neutralTwo
+    font-size: 0.7rem
+    text-align: center
+    margin-top: 10px
+.primary_inputbox
+    border: 1px #c9c9c9f8 solid
+
+    
+
+
+
+ 
+.primary_inputbox, .primary_submit
+    width: 100%
+    padding: 15px 20px
+    border-radius: 5px
+.primary_submit
+    background-color: $color_primaryTwo
+    box-shadow: 0 5px 0 0 #00ad4e
+    border: none
+    color: white
+    text-align: center
+    font-size: 1.1rem
+.-centered
+    margin: auto
+.-maxWidth
+    width: min(100%,487px)
+.-redBold
+    color: $color_primaryOne
+    font-weight: bold
+::placeholder
+    font-weight: bold
+
+
+.primary_submit:active
+    filter: brightness(1.5)
+
+
+@media only screen and (min-width: 812px)
+    main
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        background-image: url("images/bg-intro-desktop.png")
+
+    .main_title, .main_explanation1 
+        text-align: left
+        
+    .primary, .main_explanation2
+         width: min(460px, 100%)
+         margin-left: min(2vw,50px)
+    .-centered
+        margin: 0
+     
+
+    
