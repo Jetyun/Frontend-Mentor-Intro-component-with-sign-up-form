@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/intro-component-with-signup-form-IN-0GmeH9H)
+- Live Site URL: (https://jetyun.github.io/Frontend-Mentor-Intro-component-with-sign-up-form/)
 
 ## My process
 
